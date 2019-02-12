@@ -17,15 +17,24 @@ set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 add_subdirectory(deps/glfw-3.2.1)
 
 add_executable(hello_window src/hello_window/main.cpp ${GLAD})
-add_executable(hello_triangle src/hello_triangle/hello_triangle.cpp ${GLAD})
-add_executable(hello_triangle_index src/hello_triangle/hello_triangle_index.cpp ${GLAD})
+
+
+set(HELLO_TRIANGLES
+    hello_triangle
+    hello_triangle_index
+    hello_triangle_exercise1
+    )
+
+foreach(TRIANGLE ${HELLO_TRIANGLES})
+    add_executable(${TRIANGLE} src/hello_triangle/${TRIANGLE}.cpp ${GLAD})
+endforeach()
 
 set(EXAMPLES
     hello_window
-    hello_triangle
-    hello_triangle_index
+    ${HELLO_TRIANGLES}
     )
 
 foreach(EXAMPLE ${EXAMPLES})
+    message("Targt -- ${EXAMPLE}")
     target_link_libraries(${EXAMPLE} glfw)
 endforeach()
