@@ -23,6 +23,8 @@ set(HELLO_TRIANGLES
     hello_triangle
     hello_triangle_index
     hello_triangle_exercise1
+    hello_triangle_exercise2
+    hello_triangle_exercise3
     )
 
 foreach(TRIANGLE ${HELLO_TRIANGLES})
