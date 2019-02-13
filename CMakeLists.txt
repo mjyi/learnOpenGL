@@ -34,6 +34,9 @@ endforeach()
 # shaders
 set(SHADER_TARGETS
     shaders
+    shaders_uniform
+    shaders_interpolation
+    shader_class
     )
 foreach(TARGET ${SHADER_TARGETS})
     add_executable(${TARGET} src/shaders/${TARGET}.cpp ${GLAD})
