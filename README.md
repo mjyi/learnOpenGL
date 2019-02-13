@@ -1,13 +1,7 @@
 # Learn OpenGL
 
-运行环境：
-- MacbookPro 2015，macOS 10.14
+> System: MacbookPro 2015，macOS 10.14 <br>
+> Required: CMake
 
-```bash
-mkdir build && cd $_
-cmake ..
-make
-```
-
-
-[LearnOpenGL CN](https://learnopengl-cn.github.io/)
+Reference:
+- [LearnOpenGL CN](https://learnopengl-cn.github.io/)

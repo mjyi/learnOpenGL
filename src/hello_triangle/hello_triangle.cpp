@@ -107,15 +107,9 @@ int main()
         0.0f,  0.5f, 0.0f  // top
     };
 
-//    unsigned int indices[] = { // note that we start from 0!
-//        0,1,2,  // first Triangle
-//        1,2,3   // second Triangle
-//    };
-
     unsigned int VBO, VAO;
     glGenVertexArrays(1, &VAO); // vertex array obj
     glGenBuffers(1, &VBO);      // vertex buffer obj
-//    glGenBuffers(1, &EBO);      // element buffer obj
 
     // bind the vertex Array object first, then bind and set vertex buffer,
     // and then configure vertex attributes.
@@ -124,9 +118,6 @@ int main()
     // 复制顶点数组到缓冲中供OpenGL使用
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-
-//    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-//    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof (indices), indices, GL_STATIC_DRAW);
 
     // 设置顶点属性指针
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof (float), (void*)0);
