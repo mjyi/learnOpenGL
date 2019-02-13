@@ -18,7 +18,7 @@ add_subdirectory(deps/glfw-3.2.1)
 
 add_executable(hello_window src/hello_window/main.cpp ${GLAD})
 
-
+# triangle
 set(HELLO_TRIANGLES
     hello_triangle
     hello_triangle_index
@@ -31,9 +31,19 @@ foreach(TRIANGLE ${HELLO_TRIANGLES})
     add_executable(${TRIANGLE} src/hello_triangle/${TRIANGLE}.cpp ${GLAD})
 endforeach()
 
+# shaders
+set(SHADER_TARGETS
+    shaders
+    )
+foreach(TARGET ${SHADER_TARGETS})
+    add_executable(${TARGET} src/shaders/${TARGET}.cpp ${GLAD})
+endforeach()
+
+#==============
 set(EXAMPLES
     hello_window
     ${HELLO_TRIANGLES}
+    ${SHADER_TARGETS}
     )
 
 foreach(EXAMPLE ${EXAMPLES})
