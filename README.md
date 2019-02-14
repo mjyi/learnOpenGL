@@ -7,8 +7,7 @@
 ```bash
 mkdir build && cd $_
 cmake ..
-cmake --build . --target <TARGET>
-./<TARGET>
+make
 ```
 
 Reference:
