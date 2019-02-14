@@ -16,9 +16,11 @@ set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 
+# config glm
+set(GLM_TEST_ENABLE OFF CACHE BOOL "" FORCE)
+
 add_subdirectory(deps/glfw-3.2.1)
 add_subdirectory(deps/glm)
-
 
 set(LIBS glfw glm)
 
@@ -45,9 +47,6 @@ set(DEMOS
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)
 include_directories(${CMAKE_BINARY_DIR}/configuration)
 
-
-#add_library(STB_IMAGE "src/stb_image.cpp")
-#set(LIBS ${LIBS} STB_IMAGE)
 
 macro(makeLink src dest target)
   add_custom_command(TARGET ${target} POST_BUILD COMMAND ${CMAKE_COMMAND} -E create_symlink ${src} ${dest}  DEPENDS  ${dest} COMMENT "mklink ${src} -> ${dest}")
