@@ -41,7 +41,8 @@ set(DEMOS
     3.1shaders_uniform
     3.2shaders_interpolation                 
     3.3shader_class
-    4.textures                  
+    4.0textures
+    4.1textures_combined
     )
 
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)

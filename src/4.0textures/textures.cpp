@@ -4,7 +4,7 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 #include "learngl/filesystem.h"
-#include "shader_t.h"
+#include "learngl/shader_t.h"
 
 #include <iostream>
 
