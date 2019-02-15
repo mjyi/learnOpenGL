@@ -1,10 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
-project(Learn_OpenGL)
+project(LearnOpenGL)
 
 IF(NOT CMAKE_BUILD_TYPE)
   SET(CMAKE_BUILD_TYPE Debug CACHE STRING "Choose the type of build (Debug or Release)" FORCE)
 ENDIF(NOT CMAKE_BUILD_TYPE)
-
 
 set(CMAKE_CXX_STANDARD 14)
 
