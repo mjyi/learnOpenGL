@@ -43,6 +43,7 @@ set(DEMOS
     4.3.textures_exercise3
     4.4.textures_exercise4
     5.0.transformations
+    5.1.transformations_exercise2
     )
 
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)
