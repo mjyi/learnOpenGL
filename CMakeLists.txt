@@ -16,13 +16,9 @@ set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 
-# config glm
-set(GLM_TEST_ENABLE OFF CACHE BOOL "" FORCE)
 
 add_subdirectory(deps/glfw-3.2.1)
-add_subdirectory(deps/glm)
-
-set(LIBS glfw glm)
+set(LIBS glfw)
 
 add_library(GLAD "deps/glad/src/glad.c")
 set(LIBS ${LIBS} GLAD)
@@ -46,6 +42,7 @@ set(DEMOS
     4.2.textures_exercise2
     4.3.textures_exercise3
     4.4.textures_exercise4
+    5.0.transformations
     )
 
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)
