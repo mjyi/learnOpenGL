@@ -31,18 +31,19 @@ set(LIBS ${LIBS} GLAD)
 #########
 
 set(DEMOS 
-    1.0hello_window
-    2.0hello_triangle
-    2.1hello_triangle_index             
-    2.2hello_triangle_exercise1
-    2.3hello_triangle_exercise2
-    2.4hello_triangle_exercise3
-    3.0shaders
-    3.1shaders_uniform
-    3.2shaders_interpolation                 
-    3.3shader_class
-    4.0textures
-    4.1textures_combined
+    1.0.hello_window
+    2.0.hello_triangle
+    2.1.hello_triangle_index
+    2.2.hello_triangle_exercise1
+    2.3.hello_triangle_exercise2
+    2.4.hello_triangle_exercise3
+    3.0.shaders
+    3.1.shaders_uniform
+    3.2.shaders_interpolation
+    3.3.shader_class
+    4.0.textures
+    4.1.textures_combined
+    4.2.textures_exercise2
     )
 
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)
