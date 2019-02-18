@@ -44,6 +44,7 @@ set(DEMOS
         5.0.transformations
         5.1.transformations_exercise2
         6.0.coordinate_systems
+        6.1.coordinate_systems_depth
         )
 
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)
