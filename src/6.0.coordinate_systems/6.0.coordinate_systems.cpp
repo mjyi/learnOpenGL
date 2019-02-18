@@ -47,7 +47,7 @@ int main() {
         return -1;
     }
 
-    /* ======= */
+    /* ================================ */
 
     Shader aShader("6.0.coordinate_systems.vs", "6.0.coordinate_systems.fs");
     float vertices[] = {
@@ -140,6 +140,7 @@ int main() {
 
         aShader.use();
 
+        // create transformations
         glm::mat4 model = glm::mat4(1.0f);
         glm::mat4 view = glm::mat4(1.0f);
         glm::mat4 projection = glm::mat4(1.0f);
@@ -166,7 +167,7 @@ int main() {
     glDeleteBuffers(1, &VBO);
     glDeleteBuffers(1, &EBO);
 
-    /* ======= */
+    /* ================================ */
 
     return 0;
 }
