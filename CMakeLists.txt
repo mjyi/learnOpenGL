@@ -46,6 +46,7 @@ set(DEMOS
         6.0.coordinate_systems
         6.1.coordinate_systems_depth
         6.2.coordinate_systems_multiple
+        7.0.camera_circle
         )
 
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)
