@@ -50,6 +50,7 @@ set(DEMOS
         7.1.camera_keyboard_dt
         7.2.camera_mouse_zoom
         7.3.camera_class
+        8.0.lighting_color
         )
 
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)
