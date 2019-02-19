@@ -49,6 +49,7 @@ set(DEMOS
         7.0.camera_circle
         7.1.camera_keyboard_dt
         7.2.camera_mouse_zoom
+        7.3.camera_class
         )
 
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)
