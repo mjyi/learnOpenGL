@@ -51,6 +51,7 @@ set(DEMOS
         7.2.camera_mouse_zoom
         7.3.camera_class
         8.0.lighting_color
+        8.1.basic_lighting
         )
 
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)
