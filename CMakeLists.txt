@@ -48,6 +48,7 @@ set(DEMOS
         6.2.coordinate_systems_multiple
         7.0.camera_circle
         7.1.camera_keyboard_dt
+        7.2.camera_mouse_zoom
         )
 
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)
