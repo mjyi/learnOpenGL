@@ -52,6 +52,7 @@ set(DEMOS
         7.3.camera_class
         8.0.lighting_color
         8.1.basic_lighting
+        8.2.basic_lighting_specular
         )
 
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)
