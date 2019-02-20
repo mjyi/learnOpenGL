@@ -53,6 +53,7 @@ set(DEMOS
         8.0.lighting_color
         8.1.basic_lighting
         8.2.basic_lighting_specular
+        9.0.materials
         )
 
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)
