@@ -54,6 +54,7 @@ set(DEMOS
         8.1.basic_lighting
         8.2.basic_lighting_specular
         9.0.materials
+        10.0.lighting_maps_diffuse_map
         )
 
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)
