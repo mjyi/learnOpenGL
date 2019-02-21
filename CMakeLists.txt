@@ -56,6 +56,7 @@ set(DEMOS
         9.0.materials
         10.0.lighting_maps_diffuse_map
         10.1.lighting_maps_specular_map
+        11.0.lighting_casters_directional
         )
 
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)
